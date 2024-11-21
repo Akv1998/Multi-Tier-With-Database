@@ -112,10 +112,14 @@
 		<distributionManagement>
         <repository>
   <id>devshack-maven</id>
-  <url>https://pkgs.dev.azure.com/devopsshack1/00e43ab1-00ba-4bf7-9bd4-d333617efea4/_packaging/devshack-maven/maven/v1</url>
+  <url>http://localhost:8081/repository/maven-releases/</url>
   <releases>
     <enabled>true</enabled>
   </releases>
+	<snapshotRepository>
+		<id>maven-snapshot</id>
+		<url>http://localhost:8081/repository/maven-snapshots/</url>
+	</snapshotRepository>
   <snapshots>
     <enabled>true</enabled>
   </snapshots>
